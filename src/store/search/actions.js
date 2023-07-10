@@ -14,7 +14,7 @@ export const getSearchData = (value, dataName) => async (
   try {
     dispatch({ type: GET_SEARCH_DATA_PENDING, payload: dataName })
     const { data } = await axios(
-      `https://crypto-app-server.herokuapp.com/coins/${value}`,
+      `https://lit-citadel-68010.herokuapp.com/coins/${value}`,
     )
     dispatch({
       type: GET_SEARCH_DATA_SUCCESS,
